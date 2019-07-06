@@ -25,11 +25,18 @@ sh test-docker.sh
 sudo usermod -aG docker your-user
 ```
 
-From the source repo (This will install latest from the `test` channel):
+OSError: inotify watch limit reached:
+```shell
+
+cat /proc/sys/fs/inotify/max_user_watches
+8192
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+```
+Error
 ```shell
 sh install.sh
 ```
-
 ## Testing:
 
 To verify that the install script works amongst the supported operating systems run:
