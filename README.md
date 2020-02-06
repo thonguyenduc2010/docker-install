@@ -11,6 +11,10 @@ instructions](https://docs.docker.com/engine/installation/).
 This repository is solely maintained by Docker, Inc.
 
 ## Usage:
+Pre:
+`sudo apt update`
+`sudo apt upgrade`
+`sudo apt install curl`
 
 From `https://get.docker.com`:
 ```shell
