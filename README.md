@@ -13,14 +13,19 @@ This repository is solely maintained by Docker, Inc.
 ## Usage:
 
 ```
-sudo apt update
+sudo apt update -y
 ```
 ```
-sudo apt upgrade
+sudo apt upgrade -y
 ```
 ```
-sudo apt install curl
+sudo apt install curl -y
 ```
+
+```
+sudo apt update -y && sudo apt upgrade -y && sudo apt install curl -y
+```
+
 
 From `https://get.docker.com`:
 ```shell
