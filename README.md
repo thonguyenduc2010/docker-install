@@ -51,6 +51,11 @@ sudo sysctl -p
 Error
 ```shell
 sh install.sh
+
+docker ps
+
+sudo chmod 666 /var/run/docker.sock
+
 ```
 ## Docker compose
 
