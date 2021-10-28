@@ -12,21 +12,25 @@ This repository is solely maintained by Docker, Inc.
 
 ## Usage:
 
+1. Update and upgrade
+
 ```
 sudo apt update -y
-```
-```
+
 sudo apt upgrade -y
-```
-```
+
 sudo apt install curl -y
+
 ```
+
+Or
 
 ```
 sudo apt update -y && sudo apt upgrade -y && sudo apt install curl -y
 ```
 
-
+2. Install docker
+3. 
 From `https://get.docker.com`:
 ```shell
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -39,7 +43,7 @@ curl -fsSL https://test.docker.com -o test-docker.sh
 sh test-docker.sh
 sudo usermod -aG docker your-user
 ```
-
+3. Configure
 OSError: inotify watch limit reached:
 ```shell
 
@@ -57,11 +61,15 @@ docker ps
 sudo chmod 666 /var/run/docker.sock
 
 ```
-## Docker compose
+## II. Docker compose
 
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
+```
+### Command
+```
+docker-compose up|start|stop|down
 ```
 
 ## Testing:
