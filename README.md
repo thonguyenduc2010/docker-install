@@ -33,8 +33,7 @@ sudo apt update -y && sudo apt upgrade -y && sudo apt install curl -y
 3. 
 From `https://get.docker.com`:
 ```shell
-curl -fsSL https://get.docker.com -o get-docker.sh
-sh get-docker.sh
+curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh
 ```
 
 From `https://test.docker.com`:
