@@ -81,6 +81,20 @@ To verify that the install script works amongst the supported operating systems 
 make check
 ```
 
+## Update docker-compose
+```
+	sudo rm /usr/local/bin/docker-compose			# (Nếu muốn giữ lại để dùng song song thì có thể bỏ qua bước này.)
+	mkdir -p ~/.docker/cli-plugins/
+	curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+	chmod +x ~/.docker/cli-plugins/docker-compose
+	docker compose version
+	sudo ln -s ~/.docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
+	sudo rm /usr/local/bin/docker-compose
+	docker compose up
+	docker-compose up
+
+```
+
 ## Legal
 *Brought to you courtesy of our legal counsel. For more context,
 please see the [NOTICE](NOTICE) document in this repo.*
