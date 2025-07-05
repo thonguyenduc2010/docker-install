@@ -95,6 +95,17 @@ make check
 
 ```
 
+
+## Clear log:
+```
+docker ps -q --no-trunc
+or
+
+docker inspect -f '{{.Id}}' <container_name_or_id>
+
+sudo sh -c 'truncate -s 0 /var/lib/docker/containers/a1b2c3d4e5f67890.../a1b2c3d4e5f67890...-json.log'
+```
+
 ## Legal
 *Brought to you courtesy of our legal counsel. For more context,
 please see the [NOTICE](NOTICE) document in this repo.*
