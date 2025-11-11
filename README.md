@@ -98,6 +98,19 @@ make check
 
 ```
 
+## Docker compose v2
+Sử dụng GO
+Tải xuống Binary: Thay thế <VERSION> bằng phiên bản Compose V2 mới nhất (ví dụ: 2.23.3 - hãy kiểm tra trang GitHub chính thức để có phiên bản mới nhất).
+```
+DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+mkdir -p $DOCKER_CONFIG/cli-plugins
+curl -SL https://github.com/docker/compose/releases/download/v<VERSION>/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+
+chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+
+docker compose version
+```
+
 
 ## Clear log:
 ```
