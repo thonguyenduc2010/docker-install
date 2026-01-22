@@ -95,7 +95,10 @@ Nếu không có docker cũ
 	chmod +x ~/.docker/cli-plugins/docker-compose
 	docker compose version
 	sudo ln -s ~/.docker/cli-plugins/docker-compose /usr/local/bin/docker-compose
-	sudo rm /usr/local/bin/docker-compose
+
+```
+Test
+```
 	docker compose up
 	docker-compose up
 
