@@ -87,6 +87,9 @@ make check
 ## Update docker-compose
 ```
 	sudo rm /usr/local/bin/docker-compose			# (Nếu muốn giữ lại để dùng song song thì có thể bỏ qua bước này.)
+```
+Nếu không có docker cũ
+```
 	mkdir -p ~/.docker/cli-plugins/
 	curl -SL https://github.com/docker/compose/releases/latest/download/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
 	chmod +x ~/.docker/cli-plugins/docker-compose
